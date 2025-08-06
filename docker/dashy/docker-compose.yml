@@ -3,5 +3,6 @@ services:
   dashy:
     image: lissy93/dashy:latest
     container_name: dashy
+    network_mode: host
     ports:
       - 8080:80
