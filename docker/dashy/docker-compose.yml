@@ -6,3 +6,5 @@ services:
     network_mode: host
     ports:
       - 8080:80
+    volumes:
+      - ./config/conf.yml:/app/public/conf.yml:ro
