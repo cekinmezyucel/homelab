@@ -1,0 +1,4 @@
+- name: Pi-hole
+  icon: pi-hole
+  url: http://192.168.68.100:8081/admin/
+  description: "Network-wide ad blocker UI"
