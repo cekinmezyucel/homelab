@@ -1,9 +1,16 @@
-- name: Pi-hole
-  icon: pi-hole
-  url: http://192.168.68.100:8081/admin/
-  description: "Network-wide ad blocker UI"
+pageInfo:
+  title: Home Lab
+  description: My homelab dashboard
 
-- name: Glances
-  icon: glances
-  url: http://192.168.68.100:61208
-  description: "System monitoring tool"
+sections:
+  - name: Network Tools
+    icon: pi-hole
+    items:
+      - title: Pi-hole
+        icon: pi-hole
+        url: http://192.168.68.100:8081/admin/
+        description: "Network-wide ad blocker UI"
+      - title: Glances
+        icon: glances
+        url: http://192.168.68.100:61208
+        description: "System monitoring tool"
