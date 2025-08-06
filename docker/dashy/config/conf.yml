@@ -44,8 +44,10 @@ sections:
         description: Get help with Dashy, raise a bug, or get in contact
         url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
         icon: far fa-hands-helping
-      - name: Network Tools
-        icon: pi-hole
+
+  - name: Network Tools
+    icon: pi-hole
+    items:
       - title: Pi-hole
         icon: pi-hole
         url: http://192.168.68.100:8081/admin/
