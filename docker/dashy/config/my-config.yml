@@ -46,7 +46,7 @@ sections:
         icon: far fa-hands-helping
 
   - name: Network Tools
-    icon: pi-hole
+    icon: https://cdn-icons-png.flaticon.com/512/2092/2092294.png
     items:
       - title: Pi-hole
         icon: https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png
