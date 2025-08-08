@@ -50,9 +50,9 @@ sections:
     items:
       - title: Pi-hole
         icon: https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png
-        url: http://192.168.68.100:8081/admin/
+        url: http://192.168.68.35:8081/admin/
         description: "Network-wide ad blocker UI"
       - title: Glances
         icon: https://media.sys.truenas.net/apps/glances/icons/icon.png
-        url: http://192.168.68.100:61208
+        url: http://192.168.68.35:61208
         description: "System monitoring tool"
