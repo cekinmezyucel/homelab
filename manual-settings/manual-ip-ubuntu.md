@@ -1,6 +1,31 @@
-# Setting a Manual IP Address on Ubuntu Server (Netplan, Ubuntu 24.04 Supported)
+### Pi-Hole DNS Server Prerequisites
 
-This guide explains how to set a static (manual) IP address on your Ubuntu server using Netplan. Netplan is the default network configuration tool for Ubuntu 18.04 and newer, including Ubuntu 24.04.
+To ensure reliable operation of Pi-hole as your network’s DNS server, you must meet several prerequisites:
+
+- **Static IP Requirement:**
+
+  - Pi-hole must have a static IP address that is outside the automatic DHCP IP range managed by your TP-Link Deco devices. This prevents IP conflicts and ensures clients can always reach Pi-hole.
+  - If Pi-hole’s IP is within the DHCP range, another device could be assigned the same IP, causing network issues.
+  - For TP-Link Deco, check your DHCP range in the Deco app and assign Pi-hole an IP outside this range.
+
+- **How to Set a Static IP:**
+
+  - See the section below: [Setting a Static IP Address on Ubuntu Server](#setting-a-static-ip-address-on-ubuntu-server-netplan-ubuntu-2404-supported)
+
+- **Configure Deco DHCP DNS:**
+
+  - After setting a static IP for Pi-hole, go to your TP-Link Deco app > More > Advanced > DHCP Server.
+  - Set the DNS server to Pi-hole’s static IP (e.g., 192.168.68.35).
+  - Do not set the DNS in the "Internet Connection" —set it in the DHCP server settings so all devices on your network use Pi-hole for DNS.
+
+- **Summary:**
+  - Assign Pi-hole a static IP outside the DHCP range.
+  - Set Deco’s DHCP DNS to Pi-hole’s IP.
+  - This ensures all network devices use Pi-hole for DNS filtering and ad blocking.
+
+# Setting a Static IP Address on Ubuntu Server (Netplan, Ubuntu 24.04 Supported)
+
+This guide explains how to set a static IP address on your Ubuntu server using Netplan. Netplan is the default network configuration tool for Ubuntu 18.04 and newer, including Ubuntu 24.04.
 
 **Note for Ubuntu 24.04:**
 Ubuntu Server uses `renderer: networkd` by default. Ubuntu Desktop uses `renderer: NetworkManager`. This guide is for Ubuntu Server. If you are on Desktop, use `renderer: NetworkManager` and follow desktop-specific steps in the [Netplan documentation](https://netplan.io/).
