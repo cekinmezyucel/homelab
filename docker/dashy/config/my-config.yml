@@ -56,3 +56,7 @@ sections:
         icon: https://media.sys.truenas.net/apps/glances/icons/icon.png
         url: http://192.168.68.35:61208
         description: "System monitoring tool"
+      - title: Home Assistant
+        icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Home_Assistant_Logo.svg
+        url: http://192.168.68.35:8123
+        description: "Home automation platform UI"
