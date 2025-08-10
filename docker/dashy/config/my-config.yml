@@ -57,6 +57,6 @@ sections:
         url: http://192.168.68.35:61208
         description: "System monitoring tool"
       - title: Home Assistant
-        icon: https://upload.wikimedia.org/wikipedia/commons/6/6e/Home_Assistant_Logo.svg
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/New_Home_Assistant_logo.svg/2048px-New_Home_Assistant_logo.svg.png
         url: http://192.168.68.35:8123
         description: "Home automation platform UI"
