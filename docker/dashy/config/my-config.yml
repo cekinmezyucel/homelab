@@ -60,3 +60,7 @@ sections:
         icon: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/New_Home_Assistant_logo.svg/2048px-New_Home_Assistant_logo.svg.png
         url: http://192.168.68.35:8123
         description: "Home automation platform UI"
+      - title: n8n
+        icon: https://n8n.io/favicon.ico
+        url: http://192.168.68.35:5678
+        description: "Workflow automation tool"
